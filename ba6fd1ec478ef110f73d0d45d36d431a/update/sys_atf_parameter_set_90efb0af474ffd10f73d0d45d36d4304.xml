@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_parameter_set">
+    <sys_atf_parameter_set action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Given IP Address = 54.36.162.138
+Given Instance Name = instance_name
+Given Mocking Path = /api/x_1137665_iplookup/mock_ipinfo_io_api/${ipaddress}/${specific_field}
+Given HTTP Method = GetIPInfo
+Expected City = Mock City
+Given Mocking Scripted REST Resource = Get given field by IP address</description>
+        <order>2</order>
+        <parameters/>
+        <sys_class_name>sys_atf_parameter_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-17 13:02:52</sys_created_on>
+        <sys_id>90efb0af474ffd10f73d0d45d36d4304</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>2</sys_name>
+        <sys_package display_value="IPLookup" source="x_1137665_iplookup">ba6fd1ec478ef110f73d0d45d36d431a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPLookup">ba6fd1ec478ef110f73d0d45d36d431a</sys_scope>
+        <sys_update_name>sys_atf_parameter_set_90efb0af474ffd10f73d0d45d36d4304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-18 12:21:58</sys_updated_on>
+        <test display_value="IPAddressInfo">37b37c63474ffd10f73d0d45d36d432a</test>
+    </sys_atf_parameter_set>
+    <sys_variable_value action="delete_multiple" query="document_key=90efb0af474ffd10f73d0d45d36d4304"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>90efb0af474ffd10f73d0d45d36d4304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-18 12:21:58</sys_created_on>
+        <sys_id>012042f747437150f73d0d45d36d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-18 12:21:58</sys_updated_on>
+        <value>a716ab83b4ab2110320f8dc279c80492</value>
+        <variable display_value="Given Instance Name">acaf7d7747437150f73d0d45d36d4312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>90efb0af474ffd10f73d0d45d36d4304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-17 22:07:07</sys_created_on>
+        <sys_id>437cfe6747473150f73d0d45d36d43a0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-18 11:46:20</sys_updated_on>
+        <value>/api/x_1137665_iplookup/mock_ipinfo_io_api/${ipaddress}/${specific_field}</value>
+        <variable display_value="Given Mocking Path">5d82d52347cffd10f73d0d45d36d4376</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>90efb0af474ffd10f73d0d45d36d4304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-17 14:23:14</sys_created_on>
+        <sys_id>7742952347cffd10f73d0d45d36d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-17 14:23:14</sys_updated_on>
+        <value>cb0161ac47cef110f73d0d45d36d432d</value>
+        <variable display_value="Given HTTP Method">02b1d9ef478ffd10f73d0d45d36d437b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>90efb0af474ffd10f73d0d45d36d4304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-17 13:02:52</sys_created_on>
+        <sys_id>a2ef7c6f474ffd10f73d0d45d36d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-17 13:02:52</sys_updated_on>
+        <value>Mock City</value>
+        <variable display_value="Expected City">10c57ce3474ffd10f73d0d45d36d431d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>90efb0af474ffd10f73d0d45d36d4304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-18 08:51:26</sys_created_on>
+        <sys_id>d1ff41f3478f3150f73d0d45d36d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-18 08:51:26</sys_updated_on>
+        <value>a1f859e747cffd10f73d0d45d36d4374</value>
+        <variable display_value="Given Mocking Scripted REST Resource">20bf0db3478f3150f73d0d45d36d4345</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_parameter_set</document>
+        <document_key>90efb0af474ffd10f73d0d45d36d4304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-17 13:02:52</sys_created_on>
+        <sys_id>eaef7c6f474ffd10f73d0d45d36d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-17 13:02:52</sys_updated_on>
+        <value>54.36.162.138</value>
+        <variable display_value="Given IP Address">4924f0a3474ffd10f73d0d45d36d4390</variable>
+    </sys_variable_value>
+</record_update>

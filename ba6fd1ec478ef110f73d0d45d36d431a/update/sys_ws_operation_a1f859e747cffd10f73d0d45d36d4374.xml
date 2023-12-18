@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Get given field by IP address</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    response.setContentType('application/json; charset=utf-8');
+    response.setStatus(200);
+    var writer = response.getStreamWriter();
+
+    let responseJson = {
+        "ip": "8.8.8.8",
+        "hostname": "dns.google",
+        "anycast": true,
+        "city": "Mock City",
+        "region": "California",
+        "country": "US",
+        "loc": "37.4056,-122.0775",
+        "org": "AS15169 Google LLC",
+        "postal": "94043",
+        "timezone": "America/Los_Angeles",
+        "readme": "https://ipinfo.io/missingauth"
+    };
+    writer.writeString(JSON.stringify(responseJson));
+	
+	// setBody would wrap it into a { "result": { ip: ... } }
+	// response.setBody(responseJson);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1137665_iplookup/mock_ipinfo_io_api/{ipaddress}/{specific_field}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/{ipaddress}/{specific_field}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description>Get given field by IP address.</short_description>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-17 14:54:48</sys_created_on>
+        <sys_id>a1f859e747cffd10f73d0d45d36d4374</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Get given field by IP address</sys_name>
+        <sys_package display_value="IPLookup" source="x_1137665_iplookup">ba6fd1ec478ef110f73d0d45d36d431a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPLookup">ba6fd1ec478ef110f73d0d45d36d431a</sys_scope>
+        <sys_update_name>sys_ws_operation_a1f859e747cffd10f73d0d45d36d4374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-18 11:27:51</sys_updated_on>
+        <web_service_definition display_value="Mock ipinfo.io API">61445da347cffd10f73d0d45d36d43cf</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
